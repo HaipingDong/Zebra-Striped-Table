@@ -2,7 +2,7 @@ h1{
 padding-left: 10%;
 }
 .NotEmpty{
-    color: orange;
+    color: greenyellow;
 } 
 
 table { 
@@ -17,7 +17,7 @@ table {
 /* Zebra striping */
 th { 
   background: hsl(240, 100%, 19%); 
-  color: white; 
+  color: lightpink; 
   font-weight: bold; 
 }
 table>tbody>tr>td {
@@ -44,7 +44,7 @@ tr:nth-child(odd) td:first-child::before {
 tr:nth-child(even) td:first-child::before {
     content: "";
     position: absolute;
-    background-color: hsl(197, 100%, 91%);
+    background-color: hsl(297, 100%, 91%);
     top: 0;
     left: -5000px;
     width: 10000px;
