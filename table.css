@@ -1,0 +1,70 @@
+h1{
+padding-left: 10%;
+}
+.NotEmpty{
+    color: orange;
+} 
+
+table { 
+  width: 80%;
+  margin: auto;
+  min-width: 600px;
+  max-width: 1500px;
+  border-collapse: collapse;
+  overflow: hidden;
+  text-align: center;
+}
+/* Zebra striping */
+th { 
+  background: hsl(240, 100%, 19%); 
+  color: white; 
+  font-weight: bold; 
+}
+table>tbody>tr>td {
+    padding: 10px;
+    font-size: 14px;
+    position: relative;
+}
+
+
+table>tbody>tr:hover {
+    padding: 20px;
+    background-color: hsl(312, 100%, 95%);
+}
+tr:nth-child(odd) td:first-child::before {
+    content: "";
+    position: absolute;
+    background-color: hsl(197, 100%, 96%); 
+    top: 0;
+    left: -5000px;
+    width: 10000px;
+    height: 100%;
+    z-index: -10;
+}
+tr:nth-child(even) td:first-child::before {
+    content: "";
+    position: absolute;
+    background-color: hsl(197, 100%, 91%);
+    top: 0;
+    left: -5000px;
+    width: 10000px;
+    height: 100%;
+    z-index: -10;
+}
+td:hover::after {
+    content: "";
+    position: absolute;
+    background-color: hsl(312, 100%, 95%);
+    left: 0;
+    top: -5000px;
+    height: 10000px;
+    width: 100%;
+    z-index: -1;
+}
+
+
+
+.footer {
+    clear: both;
+    padding-left: 10%;      
+}
