@@ -1,9 +1,23 @@
+html {
+  box-sizing: border-box;
+}
 h1{
 padding-left: 10%;
 }
 .NotEmpty{
     color: greenyellow;
 } 
+#c1
+{
+	width:5%;
+	border-right: 2px solid black;
+}
+
+#c2, #c3, #c4, #c5, #c6
+{
+	width: 19%;
+}
+
 
 table { 
   width: 80%;
@@ -39,7 +53,7 @@ tr:nth-child(odd) td:first-child::before {
     left: -5000px;
     width: 10000px;
     height: 100%;
-    z-index: -10;
+    z-index: -1;
 }
 tr:nth-child(even) td:first-child::before {
     content: "";
@@ -49,7 +63,7 @@ tr:nth-child(even) td:first-child::before {
     left: -5000px;
     width: 10000px;
     height: 100%;
-    z-index: -10;
+    z-index: -1;
 }
 td:hover::after {
     content: "";
